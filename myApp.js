@@ -7,7 +7,7 @@ app.get('/', function (req, res) {
 });
 app.get('/json', function (req, res) {
   const msg = "Hello json";
-  res.json({"message": process.env.MESSAGE_STYLE === 'uppercase' ? msg.toUpperCase() : msg.toLowerCase()});
+  res.json({"message": process.env.MESSAGE_STYLE === 'uppercase' ? msg.toUpperCase() : msg});
 });
 
 
